@@ -1,0 +1,51 @@
+<HTML><HEAD>
+	<TITLE>11_pagoMeses.psc</TITLE>
+	<STYLE type="text/css">
+		.SSD { color:#FFFFFF; background-color:#000000; }
+		.SS0 { color:#000000; background-color:#FFFFFF; }
+		.SS1 { color:#000000; background-color:#FFFFFF; }
+		.SS2 { font-style: italic; color:#969696; background-color:#FFFFFF; }
+		.SS3 { font-style: italic; color:#0000FF; background-color:#FFFFFF; }
+		.SS4 { color:#8E6B23; background-color:#FFFFFF; }
+		.SS5 { font-weight: bold; color:#000080; background-color:#FFFFFF; }
+		.SS6 { color:#FF0000; background-color:#FFFFFF; }
+		.SS7 { color:#FF0000; background-color:#FFFFFF; }
+		.SS8 { color:#DB70DB; background-color:#FFFFFF; }
+		.SS9 { color:#238E23; background-color:#FFFFFF; }
+		.SS10 { font-weight: bold; color:#000000; background-color:#FFFFFF; }
+		.SS11 { color:#000000; background-color:#FFFFFF; }
+		.SS12 { color:#FF0000; background-color:#F0F0F0; }
+		.SS13 { color:#000000; background-color:#FFFFFF; }
+		.SS14 { color:#DB70DB; background-color:#FFFFFF; }
+		.SS15 { color:#238E23; background-color:#FFFFFF; }
+		.SS16 { color:#000080; background-color:#FFFFFF; }
+		.SS17 { color:#42426F; background-color:#FFFFFF; }
+		.SS18 { color:#FF0000; background-color:#FFFFFF; }
+		.SS19 { color:#000000; background-color:#BFD8D8; }
+		.SS34 { font-weight: bold; color:#FF0000; background-color:#F0F0FF; }
+		.SS35 { font-weight: bold; color:#800000; background-color:#FFFFFF; }
+	</STYLE>
+</HEAD><BODY><PRE>
+<SPAN class="SS5">Algoritmo</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">pago20meses</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS2">//Definimos variables</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">Definir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">pagoMes</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">pagoTotal</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">contador</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Como</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Entero</SPAN><SPAN class="SS10">;</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS11">contador</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">=</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS4">1</SPAN><SPAN class="SS10">;</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS2">//iniciamos con 10 debido a que asi lo indica el problema</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS11">pagoMes</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">=</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS4">10</SPAN><SPAN class="SS10">;</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS11">pagoTotal</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">=</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">pagoMes</SPAN><SPAN class="SS10">;</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">Escribir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">"Pago mes 1: "</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">pagoMes</SPAN><SPAN class="SS10">;</SPAN><SPAN class="SS0">
+    
+    </SPAN><SPAN class="SS5">Repetir</SPAN><SPAN class="SS0">
+        </SPAN><SPAN class="SS11">contador</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">=</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">contador</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">+</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS4">1</SPAN><SPAN class="SS10">;</SPAN><SPAN class="SS0">
+        </SPAN><SPAN class="SS11">pagoMes</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">=</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">pagoMes</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">*</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS4">2</SPAN><SPAN class="SS10">;</SPAN><SPAN class="SS0">
+        </SPAN><SPAN class="SS2">//se agrega lo que se paga cada mes al pago total</SPAN><SPAN class="SS0">
+        </SPAN><SPAN class="SS11">pagoTotal</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">=</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">pagoTotal</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">+</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">pagoMes</SPAN><SPAN class="SS10">;</SPAN><SPAN class="SS0">
+        </SPAN><SPAN class="SS5">Escribir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">"Pago mes "</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">contador</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">": "</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">pagoMes</SPAN><SPAN class="SS10">;</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">Hasta</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Que</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">contador</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">=</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS4">20</SPAN><SPAN class="SS0">
+    
+    </SPAN><SPAN class="SS2">//Escribimos el pago total</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">Escribir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">"Pago total: "</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">pagoTotal</SPAN><SPAN class="SS10">;</SPAN><SPAN class="SS0">
+    
+</SPAN><SPAN class="SS5">FinAlgoritmo</SPAN><SPAN class="SS0">
+</SPAN>
+</PRE></BODY></HTML>

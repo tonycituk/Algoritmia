@@ -1,0 +1,80 @@
+<HTML><HEAD>
+	<TITLE>elCometa.psc</TITLE>
+	<STYLE type="text/css">
+		.SSD { color:#FFFFFF; background-color:#000000; }
+		.SS0 { color:#000000; background-color:#FFFFFF; }
+		.SS1 { color:#000000; background-color:#FFFFFF; }
+		.SS2 { font-style: italic; color:#969696; background-color:#FFFFFF; }
+		.SS3 { font-style: italic; color:#0000FF; background-color:#FFFFFF; }
+		.SS4 { color:#8E6B23; background-color:#FFFFFF; }
+		.SS5 { font-weight: bold; color:#000080; background-color:#FFFFFF; }
+		.SS6 { color:#FF0000; background-color:#FFFFFF; }
+		.SS7 { color:#FF0000; background-color:#FFFFFF; }
+		.SS8 { color:#DB70DB; background-color:#FFFFFF; }
+		.SS9 { color:#238E23; background-color:#FFFFFF; }
+		.SS10 { font-weight: bold; color:#000000; background-color:#FFFFFF; }
+		.SS11 { color:#000000; background-color:#FFFFFF; }
+		.SS12 { color:#FF0000; background-color:#F0F0F0; }
+		.SS13 { color:#000000; background-color:#FFFFFF; }
+		.SS14 { color:#DB70DB; background-color:#FFFFFF; }
+		.SS15 { color:#238E23; background-color:#FFFFFF; }
+		.SS16 { color:#000080; background-color:#FFFFFF; }
+		.SS17 { color:#42426F; background-color:#FFFFFF; }
+		.SS18 { color:#FF0000; background-color:#FFFFFF; }
+		.SS19 { color:#000000; background-color:#BFD8D8; }
+		.SS34 { font-weight: bold; color:#FF0000; background-color:#F0F0FF; }
+		.SS35 { font-weight: bold; color:#800000; background-color:#FFFFFF; }
+	</STYLE>
+</HEAD><BODY><PRE>
+<SPAN class="SS5">Algoritmo</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">ElCometa</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS2">//Definimos variables</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">Definir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">claveProducto</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Como</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Entero</SPAN><SPAN class="SS10">;</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">Definir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">precioVenta</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">materiaPrima</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">manoObra</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">fabricacion</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">produccion</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Como</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Real</SPAN><SPAN class="SS10">;</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">Definir</SPAN><SPAN class="SS0">  </SPAN><SPAN class="SS11">existeClave</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Como</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Logico</SPAN><SPAN class="SS10">;</SPAN><SPAN class="SS0">
+    
+    </SPAN><SPAN class="SS2">//Solicitamos info al usuario</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">Escribir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">"Ingresa la clave del producto"</SPAN><SPAN class="SS10">;</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">Leer</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">claveProducto</SPAN><SPAN class="SS10">;</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS11">existeClave</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">=</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Verdadero</SPAN><SPAN class="SS10">;</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">Escribir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">"Ingresa el costo de materia prima"</SPAN><SPAN class="SS10">;</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">Leer</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">materiaPrima</SPAN><SPAN class="SS10">;</SPAN><SPAN class="SS0">
+    
+    </SPAN><SPAN class="SS2">//manoObra</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">Si</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">claveProducto</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">==</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS4">3</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">O</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">claveProducto</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">==</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS4">4</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Entonces</SPAN><SPAN class="SS0">
+        </SPAN><SPAN class="SS11">manoObra</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">=</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">materiaPrima</SPAN><SPAN class="SS10">*</SPAN><SPAN class="SS4">.75</SPAN><SPAN class="SS10">;</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">SiNo</SPAN><SPAN class="SS0">
+        </SPAN><SPAN class="SS5">Si</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">claveProducto</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">==</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS4">1</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">O</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">claveProducto</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">==</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS4">5</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Entonces</SPAN><SPAN class="SS0">
+            </SPAN><SPAN class="SS11">manoObra</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">=</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">materiaPrima</SPAN><SPAN class="SS10">*</SPAN><SPAN class="SS4">.80</SPAN><SPAN class="SS10">;</SPAN><SPAN class="SS0">
+        </SPAN><SPAN class="SS5">SiNo</SPAN><SPAN class="SS0">
+            </SPAN><SPAN class="SS5">Si</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">claveProducto</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">==</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS4">2</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">O</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">claveProducto</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">==</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS4">6</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Entonces</SPAN><SPAN class="SS0">
+                </SPAN><SPAN class="SS11">manoObra</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">=</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">materiaPrima</SPAN><SPAN class="SS10">*</SPAN><SPAN class="SS4">.85</SPAN><SPAN class="SS10">;</SPAN><SPAN class="SS0">
+            </SPAN><SPAN class="SS5">SiNo</SPAN><SPAN class="SS0">
+                </SPAN><SPAN class="SS11">existeClave</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">=</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Falso</SPAN><SPAN class="SS10">;</SPAN><SPAN class="SS0">
+            </SPAN><SPAN class="SS5">Fin</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Si</SPAN><SPAN class="SS0">
+        </SPAN><SPAN class="SS5">Fin</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Si</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">Fin</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Si</SPAN><SPAN class="SS0">
+    
+    </SPAN><SPAN class="SS2">//fabricacion</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">Si</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">existeClave</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">==</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Verdadero</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Entonces</SPAN><SPAN class="SS0">
+        </SPAN><SPAN class="SS5">Si</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">claveProducto</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">==</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS4">2</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">O</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">claveProducto</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">==</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS4">5</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Entonces</SPAN><SPAN class="SS0">
+            </SPAN><SPAN class="SS11">fabricacion</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">=</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">materiaPrima</SPAN><SPAN class="SS10">*</SPAN><SPAN class="SS4">.30</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">+</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">materiaPrima</SPAN><SPAN class="SS10">;</SPAN><SPAN class="SS0">
+        </SPAN><SPAN class="SS5">SiNo</SPAN><SPAN class="SS0">
+            </SPAN><SPAN class="SS5">Si</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">claveProducto</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">==</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS4">3</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">O</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">claveProducto</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">==</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS4">6</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Entonces</SPAN><SPAN class="SS0">
+                </SPAN><SPAN class="SS11">fabricacion</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">=</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">materiaPrima</SPAN><SPAN class="SS10">*</SPAN><SPAN class="SS4">.35</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">+</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">materiaPrima</SPAN><SPAN class="SS10">;</SPAN><SPAN class="SS0">
+            </SPAN><SPAN class="SS5">SiNo</SPAN><SPAN class="SS0">
+                </SPAN><SPAN class="SS5">Si</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">claveProducto</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">==</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS4">2</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">O</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">claveProducto</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">==</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS4">6</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Entonces</SPAN><SPAN class="SS0">
+                    </SPAN><SPAN class="SS11">fabricacion</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">=</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">materiaPrima</SPAN><SPAN class="SS10">*</SPAN><SPAN class="SS4">.28</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">+</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">materiaPrima</SPAN><SPAN class="SS10">;</SPAN><SPAN class="SS0">
+                </SPAN><SPAN class="SS5">Fin</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Si</SPAN><SPAN class="SS0">
+            </SPAN><SPAN class="SS5">Fin</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Si</SPAN><SPAN class="SS0">
+        </SPAN><SPAN class="SS5">Fin</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Si</SPAN><SPAN class="SS0">
+        </SPAN><SPAN class="SS11">produccion</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">=</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">materiaPrima</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">+</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">manoObra</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">+</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">fabricacion</SPAN><SPAN class="SS10">;</SPAN><SPAN class="SS0">
+        </SPAN><SPAN class="SS11">precioVenta</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">=</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">produccion</SPAN><SPAN class="SS10">*</SPAN><SPAN class="SS4">.45</SPAN><SPAN class="SS10">+</SPAN><SPAN class="SS11">produccion</SPAN><SPAN class="SS10">;</SPAN><SPAN class="SS0">
+        </SPAN><SPAN class="SS5">Escribir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">"El precioVenta de venta es: $"</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">precioVenta</SPAN><SPAN class="SS10">;</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">SiNo</SPAN><SPAN class="SS0">
+        </SPAN><SPAN class="SS5">Escribir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">"Esa clave de producto no existe :("</SPAN><SPAN class="SS10">;</SPAN><SPAN class="SS0">
+        </SPAN><SPAN class="SS5">Escribir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">"Reinicie el programa para calcular el precio de venta"</SPAN><SPAN class="SS10">;</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">Fin</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Si</SPAN><SPAN class="SS0">
+    
+</SPAN><SPAN class="SS5">FinAlgoritmo</SPAN><SPAN class="SS0">
+</SPAN>
+</PRE></BODY></HTML>

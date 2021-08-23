@@ -1,0 +1,106 @@
+<HTML><HEAD>
+	<TITLE>04_cituk.psc</TITLE>
+	<STYLE type="text/css">
+		.SSD { color:#FFFFFF; background-color:#000000; }
+		.SS0 { color:#000000; background-color:#FFFFFF; }
+		.SS1 { color:#000000; background-color:#FFFFFF; }
+		.SS2 { font-style: italic; color:#969696; background-color:#FFFFFF; }
+		.SS3 { font-style: italic; color:#0000FF; background-color:#FFFFFF; }
+		.SS4 { color:#8E6B23; background-color:#FFFFFF; }
+		.SS5 { font-weight: bold; color:#000080; background-color:#FFFFFF; }
+		.SS6 { color:#FF0000; background-color:#FFFFFF; }
+		.SS7 { color:#FF0000; background-color:#FFFFFF; }
+		.SS8 { color:#DB70DB; background-color:#FFFFFF; }
+		.SS9 { color:#238E23; background-color:#FFFFFF; }
+		.SS10 { font-weight: bold; color:#000000; background-color:#FFFFFF; }
+		.SS11 { color:#000000; background-color:#FFFFFF; }
+		.SS12 { color:#FF0000; background-color:#F0F0F0; }
+		.SS13 { color:#000000; background-color:#FFFFFF; }
+		.SS14 { color:#DB70DB; background-color:#FFFFFF; }
+		.SS15 { color:#238E23; background-color:#FFFFFF; }
+		.SS16 { color:#000080; background-color:#FFFFFF; }
+		.SS17 { color:#42426F; background-color:#FFFFFF; }
+		.SS18 { color:#FF0000; background-color:#FFFFFF; }
+		.SS19 { color:#000000; background-color:#BFD8D8; }
+		.SS34 { font-weight: bold; color:#FF0000; background-color:#F0F0FF; }
+		.SS35 { font-weight: bold; color:#800000; background-color:#FFFFFF; }
+	</STYLE>
+</HEAD><BODY><PRE>
+<SPAN class="SS5">SubAlgoritmo</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">esPrimo</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">&lt;-</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">validarPrimo</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">(</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">numeroAValidar</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">)</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">Definir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">raizV</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Como</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Real</SPAN><SPAN class="SS10">;</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">Definir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">esPrimo</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Como</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Logico</SPAN><SPAN class="SS10">;</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">Definir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">i</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Como</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Entero</SPAN><SPAN class="SS10">;</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS11">raizV</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">=</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS16">trunc</SPAN><SPAN class="SS10">(</SPAN><SPAN class="SS16">rc</SPAN><SPAN class="SS10">(</SPAN><SPAN class="SS11">numeroAValidar</SPAN><SPAN class="SS10">));</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS11">esPrimo</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">=</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Verdadero</SPAN><SPAN class="SS10">;</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">Si</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">numeroAValidar</SPAN><SPAN class="SS10">≤</SPAN><SPAN class="SS4">1</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Entonces</SPAN><SPAN class="SS0">
+        </SPAN><SPAN class="SS11">esPrimo</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">=</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Falso</SPAN><SPAN class="SS10">;</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">SiNo</SPAN><SPAN class="SS0">
+        </SPAN><SPAN class="SS5">Para</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">i</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">=</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS4">2</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Hasta</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">raizV</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Con</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Paso</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS4">1</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Hacer</SPAN><SPAN class="SS0">
+            
+            </SPAN><SPAN class="SS2">//Si el resto es 0 entonces es divisible por algún número</SPAN><SPAN class="SS0">
+            </SPAN><SPAN class="SS2">//entonces no es un numero primo</SPAN><SPAN class="SS0">
+            </SPAN><SPAN class="SS5">Si</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">numeroAValidar</SPAN><SPAN class="SS10">%</SPAN><SPAN class="SS11">i</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">==</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS4">0</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Entonces</SPAN><SPAN class="SS0">
+                </SPAN><SPAN class="SS11">esPrimo</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">=</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Falso</SPAN><SPAN class="SS10">;</SPAN><SPAN class="SS0">
+                </SPAN><SPAN class="SS11">i</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">=</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">raizV</SPAN><SPAN class="SS10">;</SPAN><SPAN class="SS0">
+            </SPAN><SPAN class="SS5">Fin</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Si</SPAN><SPAN class="SS0">
+        </SPAN><SPAN class="SS5">Fin</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Para</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">Fin</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Si</SPAN><SPAN class="SS0">
+    
+</SPAN><SPAN class="SS5">Fin</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">SubAlgoritmo</SPAN><SPAN class="SS0">
+
+</SPAN><SPAN class="SS5">Algoritmo</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">mPrimosN</SPAN><SPAN class="SS0">
+    
+
+    </SPAN><SPAN class="SS2">//Definimos variables</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">Definir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">n</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">m</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">numerosArray</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">primosArray</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">i</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">contadorPrimos</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">j</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Como</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Entero</SPAN><SPAN class="SS10">;</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS11">contadorPrimos</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">=</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS4">0</SPAN><SPAN class="SS10">;</SPAN><SPAN class="SS0">
+    
+    </SPAN><SPAN class="SS2">//pedimos la cantidad de números primos y los numeros a revisar</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">Escribir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Sin</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Saltar</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">"¿Cuántos números tiene?"</SPAN><SPAN class="SS10">;</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">Leer</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">m</SPAN><SPAN class="SS10">;</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS11">n</SPAN><SPAN class="SS9">=</SPAN><SPAN class="SS11">m</SPAN><SPAN class="SS10">+</SPAN><SPAN class="SS4">1</SPAN><SPAN class="SS10">;</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">Mientras</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">n</SPAN><SPAN class="SS10">&gt;</SPAN><SPAN class="SS11">m</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Hacer</SPAN><SPAN class="SS0">
+        </SPAN><SPAN class="SS5">Escribir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Sin</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Saltar</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">"¿Cuántos primeros primos quiere?"</SPAN><SPAN class="SS10">;</SPAN><SPAN class="SS0">
+        </SPAN><SPAN class="SS5">Leer</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">n</SPAN><SPAN class="SS10">;</SPAN><SPAN class="SS0">
+        
+        </SPAN><SPAN class="SS5">Si</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">n</SPAN><SPAN class="SS10">&gt;</SPAN><SPAN class="SS11">m</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Entonces</SPAN><SPAN class="SS0">
+            </SPAN><SPAN class="SS5">Escribir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">"Debe pedir menos primos que el tamaño de los numeros que tienes, repita el ingreso de valor."</SPAN><SPAN class="SS10">;</SPAN><SPAN class="SS0">
+        </SPAN><SPAN class="SS5">Fin</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Si</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">Fin</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Mientras</SPAN><SPAN class="SS0">
+    
+
+    
+    </SPAN><SPAN class="SS5">Dimension</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">numerosArray</SPAN><SPAN class="SS10">[</SPAN><SPAN class="SS11">m</SPAN><SPAN class="SS10">];</SPAN><SPAN class="SS0">
+    
+    </SPAN><SPAN class="SS2">//Guardamos los números del usuario</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">Para</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">i</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">=</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS4">0</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Hasta</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">m</SPAN><SPAN class="SS10">-</SPAN><SPAN class="SS4">1</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Con</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Paso</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS4">1</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Hacer</SPAN><SPAN class="SS0">
+        </SPAN><SPAN class="SS5">Escribir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Sin</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Saltar</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">"Ingrese el valor para el número "</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">i</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">+</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS4">1</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">":"</SPAN><SPAN class="SS10">;</SPAN><SPAN class="SS0">
+        </SPAN><SPAN class="SS5">Leer</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">numerosArray</SPAN><SPAN class="SS10">[</SPAN><SPAN class="SS11">i</SPAN><SPAN class="SS10">];</SPAN><SPAN class="SS0">
+        </SPAN><SPAN class="SS5">Si</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">validarPrimo</SPAN><SPAN class="SS10">(</SPAN><SPAN class="SS11">numerosArray</SPAN><SPAN class="SS10">[</SPAN><SPAN class="SS11">i</SPAN><SPAN class="SS10">])</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Entonces</SPAN><SPAN class="SS0">
+            </SPAN><SPAN class="SS11">contadorPrimos</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">=</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">contadorPrimos</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">+</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS4">1</SPAN><SPAN class="SS10">;</SPAN><SPAN class="SS0">
+        </SPAN><SPAN class="SS5">Fin</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Si</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">Fin</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Para</SPAN><SPAN class="SS0">
+    
+    </SPAN><SPAN class="SS5">Dimension</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">primosArray</SPAN><SPAN class="SS10">[</SPAN><SPAN class="SS11">contadorPrimos</SPAN><SPAN class="SS10">];</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS11">j</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">=</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS4">0</SPAN><SPAN class="SS10">;</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">Para</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">i</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">=</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS4">0</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Hasta</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">m</SPAN><SPAN class="SS10">-</SPAN><SPAN class="SS4">1</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Con</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Paso</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS4">1</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Hacer</SPAN><SPAN class="SS0">
+        </SPAN><SPAN class="SS5">Si</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">validarPrimo</SPAN><SPAN class="SS10">(</SPAN><SPAN class="SS11">numerosArray</SPAN><SPAN class="SS10">[</SPAN><SPAN class="SS11">i</SPAN><SPAN class="SS10">])</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Entonces</SPAN><SPAN class="SS0">
+            </SPAN><SPAN class="SS11">primosArray</SPAN><SPAN class="SS10">[</SPAN><SPAN class="SS11">j</SPAN><SPAN class="SS10">]</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">=</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">numerosArray</SPAN><SPAN class="SS10">[</SPAN><SPAN class="SS11">i</SPAN><SPAN class="SS10">];</SPAN><SPAN class="SS0">
+            </SPAN><SPAN class="SS11">j</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">=</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">j</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">+</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS4">1</SPAN><SPAN class="SS10">;</SPAN><SPAN class="SS0">
+            </SPAN><SPAN class="SS5">Si</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">j</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">=</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">contadorPrimos</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Entonces</SPAN><SPAN class="SS0">
+                </SPAN><SPAN class="SS11">i</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">=</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">m</SPAN><SPAN class="SS10">;</SPAN><SPAN class="SS0">
+            </SPAN><SPAN class="SS5">Fin</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Si</SPAN><SPAN class="SS0">
+        </SPAN><SPAN class="SS5">Fin</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Si</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">Fin</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Para</SPAN><SPAN class="SS0">
+    
+    </SPAN><SPAN class="SS5">Si</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">contadorPrimos</SPAN><SPAN class="SS10">&lt;</SPAN><SPAN class="SS11">n</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Entonces</SPAN><SPAN class="SS0">
+        </SPAN><SPAN class="SS5">Escribir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">"No hubo "</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">n</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">" primos para tus números pero te presento los primeros "</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">contadorPrimos</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">" primos disponibles."</SPAN><SPAN class="SS10">;</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">FinSi</SPAN><SPAN class="SS0">
+    
+    </SPAN><SPAN class="SS5">Para</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">i</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">=</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS4">0</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Hasta</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">contadorPrimos</SPAN><SPAN class="SS10">-</SPAN><SPAN class="SS4">1</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Con</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Paso</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS4">1</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Hacer</SPAN><SPAN class="SS0">
+        </SPAN><SPAN class="SS5">Escribir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">i</SPAN><SPAN class="SS10">+</SPAN><SPAN class="SS4">1</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS6">"-. "</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">primosArray</SPAN><SPAN class="SS10">[</SPAN><SPAN class="SS11">i</SPAN><SPAN class="SS10">];</SPAN><SPAN class="SS0">
+        
+    </SPAN><SPAN class="SS5">Fin</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Para</SPAN><SPAN class="SS0">
+</SPAN><SPAN class="SS5">FinAlgoritmo</SPAN><SPAN class="SS0">
+</SPAN>
+</PRE></BODY></HTML>

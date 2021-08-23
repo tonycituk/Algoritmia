@@ -1,0 +1,88 @@
+<HTML><HEAD>
+	<TITLE>06_cituk.psc</TITLE>
+	<STYLE type="text/css">
+		.SSD { color:#FFFFFF; background-color:#000000; }
+		.SS0 { color:#000000; background-color:#FFFFFF; }
+		.SS1 { color:#000000; background-color:#FFFFFF; }
+		.SS2 { font-style: italic; color:#969696; background-color:#FFFFFF; }
+		.SS3 { font-style: italic; color:#0000FF; background-color:#FFFFFF; }
+		.SS4 { color:#8E6B23; background-color:#FFFFFF; }
+		.SS5 { font-weight: bold; color:#000080; background-color:#FFFFFF; }
+		.SS6 { color:#FF0000; background-color:#FFFFFF; }
+		.SS7 { color:#FF0000; background-color:#FFFFFF; }
+		.SS8 { color:#DB70DB; background-color:#FFFFFF; }
+		.SS9 { color:#238E23; background-color:#FFFFFF; }
+		.SS10 { font-weight: bold; color:#000000; background-color:#FFFFFF; }
+		.SS11 { color:#000000; background-color:#FFFFFF; }
+		.SS12 { color:#FF0000; background-color:#F0F0F0; }
+		.SS13 { color:#000000; background-color:#FFFFFF; }
+		.SS14 { color:#DB70DB; background-color:#FFFFFF; }
+		.SS15 { color:#238E23; background-color:#FFFFFF; }
+		.SS16 { color:#000080; background-color:#FFFFFF; }
+		.SS17 { color:#42426F; background-color:#FFFFFF; }
+		.SS18 { color:#FF0000; background-color:#FFFFFF; }
+		.SS19 { color:#000000; background-color:#BFD8D8; }
+		.SS34 { font-weight: bold; color:#FF0000; background-color:#F0F0FF; }
+		.SS35 { font-weight: bold; color:#800000; background-color:#FFFFFF; }
+	</STYLE>
+</HEAD><BODY><PRE>
+<SPAN class="SS5">Algoritmo</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">examenIngreso</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS2">//Definimos variables</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">Definir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">n</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">i</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">j</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">calificacion</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">repeticiones</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">repeticionesP</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">posicionModa</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Como</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Entero</SPAN><SPAN class="SS10">;</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">Definir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">promedio</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">calificaciones</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">varianza</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">desviacionE</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Como</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Real</SPAN><SPAN class="SS10">;</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS11">promedio</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">=</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS4">0</SPAN><SPAN class="SS10">;</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS11">varianza</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">=</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS4">0</SPAN><SPAN class="SS10">;</SPAN><SPAN class="SS0">
+    
+    </SPAN><SPAN class="SS2">//Pedimos la cantidad n de alumnos</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">Escribir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">"Ingresa la cantidad de alumnos"</SPAN><SPAN class="SS10">;</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">Leer</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">n</SPAN><SPAN class="SS10">;</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">Dimension</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">calificaciones</SPAN><SPAN class="SS10">[</SPAN><SPAN class="SS11">n</SPAN><SPAN class="SS10">];</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS2">//por cada alumno pedimos calificacion</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">Para</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">i</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">=</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS4">0</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Hasta</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">n</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">-</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS4">1</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Con</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Paso</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS4">1</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Hacer</SPAN><SPAN class="SS0">
+        </SPAN><SPAN class="SS5">Escribir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">"Ingresa la calificación del alumno #"</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS11">i</SPAN><SPAN class="SS10">+</SPAN><SPAN class="SS4">1</SPAN><SPAN class="SS10">;</SPAN><SPAN class="SS0">
+        </SPAN><SPAN class="SS5">Leer</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">calificacion</SPAN><SPAN class="SS10">;</SPAN><SPAN class="SS0">
+        </SPAN><SPAN class="SS11">promedio</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">=</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">((</SPAN><SPAN class="SS11">promedio</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">*</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">i</SPAN><SPAN class="SS10">)</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">+</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">calificacion</SPAN><SPAN class="SS10">)</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">/</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">(</SPAN><SPAN class="SS11">i</SPAN><SPAN class="SS10">+</SPAN><SPAN class="SS4">1</SPAN><SPAN class="SS10">);</SPAN><SPAN class="SS0">
+        </SPAN><SPAN class="SS11">calificaciones</SPAN><SPAN class="SS10">[</SPAN><SPAN class="SS11">i</SPAN><SPAN class="SS10">]</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">=</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">calificacion</SPAN><SPAN class="SS10">;</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">Fin</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Para</SPAN><SPAN class="SS0">
+    
+    </SPAN><SPAN class="SS11">repeticionesP</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">=</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS4">0</SPAN><SPAN class="SS10">;</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS2">//Iteramos para obtener la suma de los cuadrados y la posicion de la moda</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">Para</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">i</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">=</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS4">0</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Hasta</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">n</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">-</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS4">1</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Con</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Paso</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS4">1</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Hacer</SPAN><SPAN class="SS0">
+        </SPAN><SPAN class="SS11">repeticiones</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">=</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS4">0</SPAN><SPAN class="SS10">;</SPAN><SPAN class="SS0">
+        </SPAN><SPAN class="SS11">varianza</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">=</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">varianza</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">+</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">(</SPAN><SPAN class="SS11">calificaciones</SPAN><SPAN class="SS10">[</SPAN><SPAN class="SS11">i</SPAN><SPAN class="SS10">]-</SPAN><SPAN class="SS11">promedio</SPAN><SPAN class="SS10">)↑</SPAN><SPAN class="SS4">2</SPAN><SPAN class="SS10">;</SPAN><SPAN class="SS0">
+        </SPAN><SPAN class="SS5">Para</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">j</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">=</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS4">0</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Hasta</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">n</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">-</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS4">1</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Con</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Paso</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS4">1</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Hacer</SPAN><SPAN class="SS0">
+            </SPAN><SPAN class="SS5">Si</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">calificaciones</SPAN><SPAN class="SS10">[</SPAN><SPAN class="SS11">i</SPAN><SPAN class="SS10">]==</SPAN><SPAN class="SS11">calificaciones</SPAN><SPAN class="SS10">[</SPAN><SPAN class="SS11">j</SPAN><SPAN class="SS10">]</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Y</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">i</SPAN><SPAN class="SS10">≠</SPAN><SPAN class="SS11">j</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Entonces</SPAN><SPAN class="SS0">
+                </SPAN><SPAN class="SS11">repeticiones</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">=</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">repeticiones</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">+</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS4">1</SPAN><SPAN class="SS10">;</SPAN><SPAN class="SS0">
+            </SPAN><SPAN class="SS5">Fin</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Si</SPAN><SPAN class="SS0">
+        </SPAN><SPAN class="SS5">Fin</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Para</SPAN><SPAN class="SS0">
+        </SPAN><SPAN class="SS5">Si</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">repeticiones</SPAN><SPAN class="SS10">&gt;</SPAN><SPAN class="SS11">repeticionesP</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Entonces</SPAN><SPAN class="SS0">
+            </SPAN><SPAN class="SS11">repeticionesP</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">=</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">repeticiones</SPAN><SPAN class="SS10">;</SPAN><SPAN class="SS0">
+            </SPAN><SPAN class="SS11">posicionModa</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">=</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">i</SPAN><SPAN class="SS10">;</SPAN><SPAN class="SS0">
+        </SPAN><SPAN class="SS5">Fin</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Si</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">Fin</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Para</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS11">varianza</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">=</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">varianza</SPAN><SPAN class="SS10">/</SPAN><SPAN class="SS11">n</SPAN><SPAN class="SS10">;</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS11">desviacionE</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">=</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS16">rc</SPAN><SPAN class="SS10">(</SPAN><SPAN class="SS11">varianza</SPAN><SPAN class="SS10">);</SPAN><SPAN class="SS0">
+    
+</SPAN><SPAN class="SS2">//    for(int i=0;i&lt;n;i++){</SPAN><SPAN class="SS0">
+</SPAN><SPAN class="SS2">//    s=0;</SPAN><SPAN class="SS0">
+</SPAN><SPAN class="SS2">//    for(int j=0;j&lt;n;j++){</SPAN><SPAN class="SS0">
+</SPAN><SPAN class="SS2">//    if(A[i]==A[j] &amp; i&lt;&gt;j){</SPAN><SPAN class="SS0">
+</SPAN><SPAN class="SS2">//    s=s+1;</SPAN><SPAN class="SS0">
+</SPAN><SPAN class="SS2">//    }               </SPAN><SPAN class="SS0">
+</SPAN><SPAN class="SS2">//    }</SPAN><SPAN class="SS0">
+</SPAN><SPAN class="SS2">//    if(s&gt;=m){</SPAN><SPAN class="SS0">
+</SPAN><SPAN class="SS2">//    m=s;//guardamos el mayor por el momento</SPAN><SPAN class="SS0">
+</SPAN><SPAN class="SS2">//    a=i;    </SPAN><SPAN class="SS0">
+</SPAN><SPAN class="SS2">//    }</SPAN><SPAN class="SS0">
+</SPAN><SPAN class="SS2">//    }</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS2">//Imprimimos resultados</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">Escribir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">"La media aritmética es: "</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">promedio</SPAN><SPAN class="SS10">;</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">Escribir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">"La varianza es: "</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">varianza</SPAN><SPAN class="SS10">;</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">Escribir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">"La desviacion estandar es: "</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">desviacionE</SPAN><SPAN class="SS10">;</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">Escribir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">"La moda es: "</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">calificaciones</SPAN><SPAN class="SS10">[</SPAN><SPAN class="SS11">posicionModa</SPAN><SPAN class="SS10">];</SPAN><SPAN class="SS0">
+    
+
+
+</SPAN><SPAN class="SS5">FinAlgoritmo</SPAN><SPAN class="SS0">
+</SPAN>
+</PRE></BODY></HTML>
